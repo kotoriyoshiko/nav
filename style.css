@@ -1,0 +1,140 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+::after{box-sizing: border-box;}
+::after{box-sizing: border-box;}
+ul,ol{list-style: none;}
+a{color: inherit;text-decoration: none;}
+img{max-width: 100%;max-height: 100%;}
+.webheader{
+    margin: 20px;
+}
+@media (min-width:500px) {
+    .webheader{
+        margin: 300px 0 100px 0;
+    }
+}
+.searchfrom{
+    display: flex;
+    justify-content: space-between;
+}
+@media (min-width) {
+    .searchfrom{
+        margin: 60px 0;
+    }
+}
+@media (min-width:500px) {
+    .searchfrom{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.searchfrom>input{
+    width: 100%;
+    margin-right: 10px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+.searchfrom>button{
+    white-space: nowrap;
+    padding:  0 22px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #7F98F0;
+    color: #DDDDDD;
+    font-size: 18px;
+    line-height: 21px
+}
+.webmain{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.weblist{ 
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+@media (min-width:500px) {
+    .weblist{
+        margin-left:0;
+        margin-right:-25px;
+        justify-content: flex-start;
+    }
+}
+.weblist>li{
+    margin-bottom: 10px;
+}
+@media (min-width:500px) {
+    .weblist>li{
+        margin-right: 25px;
+    }
+}
+.weblist .site{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer;
+}
+.weblist .site>.logo{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    font-size: 27px;
+}
+.weblist .site>.close{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: none;
+}
+.weblist .site:hover>.close{
+    display: block;
+}
+
+.weblist .site>.link{
+    margin-top: 5px;
+}
+.weblist .addButton{
+    border: 1px solid #ddd;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    border-radius: 4px;
+
+}
+.weblist .addButton .icon{
+    width: 56px;
+    height: 56px;
+}
+.weblist .addButton .text{
+    margin-top: 5px;
+}
+.weblist .addButton .icon-wrapper{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
